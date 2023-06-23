@@ -52,7 +52,7 @@ const AvatarCard = ({ profile, loading, avatarRing, resume }) => {
           <div className="mt-3 text-base-content text-opacity-60 font-mono">
             {loading || !profile
               ? skeleton({ width: 'w-48', height: 'h-5' })
-              : profile.bio}
+              : "Error 404: Description not found | Tech Troublemaker | Artistic Daydreamer"}
           </div>
         </div>
         {resume?.fileUrl &&
@@ -68,7 +68,7 @@ const AvatarCard = ({ profile, loading, avatarRing, resume }) => {
               download
               rel="noreferrer"
             >
-              Download Resume
+              Resume
             </a>
           ))}
       </div>

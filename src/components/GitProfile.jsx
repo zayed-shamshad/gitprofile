@@ -153,7 +153,7 @@ const GitProfile = ({ config }) => {
         ) : (
           sanitizedConfig && (
             <Fragment>
-              <div className={`p-4 lg:p-10 min-h-full ${bgColor}`}>
+              <div className={`p-4 lg:p-5 min-h-full ${bgColor}`}>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 rounded-box">
                   <div className="col-span-1">
                     <div className="grid grid-cols-1 gap-6">
@@ -189,10 +189,7 @@ const GitProfile = ({ config }) => {
                         loading={loading}
                         education={sanitizedConfig.education}
                       />
-                      <Certification
-                        loading={loading}
-                        certifications={sanitizedConfig.certifications}
-                      />
+                     
                     </div>
                   </div>
                   <div className="lg:col-span-2 col-span-1">
@@ -212,6 +209,10 @@ const GitProfile = ({ config }) => {
                         loading={loading}
                         googleAnalytics={sanitizedConfig.googleAnalytics}
                         blog={sanitizedConfig.blog}
+                      />
+                       <Certification
+                        loading={loading}
+                        certifications={sanitizedConfig.certifications}
                       />
                     </div>
                   </div>
