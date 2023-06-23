@@ -2,113 +2,129 @@
 
 const config = {
   github: {
-    username: 'arifszn', // Your GitHub org/user name. (Required)
-    sortBy: 'stars', // stars | updated
-    limit: 10, // How many projects to display.
+    username: 'zayed-shamshad', // Your GitHub org/user name. (Required)
+    sortBy: 'updated', // stars | updated
+    limit: 6, // How many projects to display.
     exclude: {
-      forks: false, // Forked projects will not be displayed if set to true.
-      projects: [], // These projects will not be displayed. example: ['my-project1', 'my-project2']
+      forks: true, // Forked projects will not be displayed if set to true.
+      projects: [
+        'quizapp',
+        'zayed-shamshad',
+        'isDhruvSingle-',
+        'board-zayed'
+
+
+      ], // These projects will not be displayed. example: ['my-project1', 'my-project2']
     },
   },
   social: {
-    linkedin: 'ariful-alam',
-    twitter: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
-    facebook: '',
-    instagram: '',
-    dribbble: '',
-    behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
-    stackoverflow: '', // format: userid/username
-    skype: '',
-    telegram: '',
-    website: 'https://arifszn.com',
-    phone: '',
-    email: 'arifulalamszn@gmail.com',
+    linkedin: 'mohammad-zaid-shamshad-611546203',
+    twitter: 'ZaidShamshad2',
+    instagram: 'zaid_shamshad',
+    website: 'https://zayed-shamshad.github.io/',
+    email: 'shamshad.1@iitj.ac.in',
   },
   resume: {
     fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      'https://drive.google.com/file/d/1lRpS_P2OvivE2Jh3O-egb0JwdSz5VCdE/view?usp=drive_link', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
-    'PHP',
-    'Laravel',
+    'Nuxt JS',
+    'Vue.js',
+    'Firebase',
+    'Android',
+    'Java',
+    'Python',
+    'Django',
+    'Flask',
+    'Flutter',
     'JavaScript',
-    'React.js',
     'Node.js',
-    'Nest.js',
-    'MySQL',
-    'PostgreSQL',
+    'Express.js',
+    'FastAPI',
+    'Sqlite3',
+    'MongoDB',
     'Git',
     'Docker',
-    'PHPUnit',
     'CSS',
-    'Antd',
     'Tailwind',
+    'Bootstrap',
+    'HTML',
+    'C',
+    'C++',
+
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
+      company: 'Willings Inc.',
+      position: 'Full Stack Engineer',
+      from: 'Jan 2023',
+      to: 'March 2023',
+      companyLink: 'https://willings.co.jp/',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'DimensionEd (ArEd)',
+      position: 'Web & Mobile App Developer',
+      from: 'Dec 2021',
+      to: 'March 2022',
+      companyLink: 'https://dimensioned.in/',
     },
   ],
-  /* certifications: [
+   certifications: [
     {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
+      name: 'Udemy - The Complete 2022 Web Development Bootcamp',
+      body: 'Udemy',
       year: 'March 2022',
-      link: 'https://example.com'
+       link: 'https://udemy-certificate.s3.amazonaws.com/image/UC-d19d0ef0-b3c1-4ee9-9a8e-ac1fd3a1734f.jpg'
     },
-  ], */
+  ], 
   education: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
+      institution: 'IIT Jodhpur',
+      degree: 'B.Tech in Electrical Engineering',
+      from: '2020',
+      to: '2024',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'Anand Bhawan School',
+      degree: 'Intermediate',
+      from: '2017',
+      to: '2019',
     },
   ],
 
   // To hide the `My Projects` section, keep it empty.
   externalProjects: [
     {
-      title: 'Project Name',
+      title: 'Elfurat website',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-      imageUrl: 'https://via.placeholder.com/250x250',
-      link: 'https://example.com',
+        'A website for a Tech-Startup. The website is built with Nuxt.js and Tailwind CSS, deployed on Cloudflare Pages.',
+      imageUrl: 'https://elfurat.tech/_nuxt/nobgblacktext.ddf8865d.png',
+      link: 'https://elfurat.tech',
     },
     {
-      title: 'Project Name',
+      title: 'Proximity based Reminder',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-      imageUrl: 'https://via.placeholder.com/250x250',
-      link: 'https://example.com',
+        'A Native android app that reminds you to do a task when you are near a location. The app uses Geofencing, GPS and Sqlite as database.',  
+      imageUrl: '',
+      link: 'https://github.com/zayed-shamshad/MPC_PROJECT',
     },
+    {
+      title: 'Prakriti app',
+      description:
+        'A Native android app, a social media app for environmentalists. The app uses Firebase as backend and has features like posting, liking, commenting, ML kit integration etc.',
+      imageUrl: '',
+      link: '',
+    },
+    
+  
   ],
   // Display blog posts from your medium or dev account. (Optional)
-  blog: {
-    source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
-    limit: 2, // How many posts to display. Max is 10.
-  },
+  // blog: {
+  //   source: 'dev', // medium | dev
+  //   username: 'arifszn', // to hide blog section, keep it empty
+  //   limit: 2, // How many posts to display. Max is 10.
+  // },
   googleAnalytics: {
     id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
   },
@@ -118,7 +134,7 @@ const config = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'wireframe',
+    defaultTheme: 'light',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
@@ -134,35 +150,35 @@ const config = {
     // Available themes. To remove any theme, exclude from here.
     themes: [
       'light',
-      'dark',
-      'cupcake',
-      'bumblebee',
-      'emerald',
-      'corporate',
-      'synthwave',
-      'retro',
-      'cyberpunk',
-      'valentine',
-      'halloween',
-      'garden',
-      'forest',
-      'aqua',
-      'lofi',
-      'pastel',
-      'fantasy',
-      'wireframe',
-      'black',
-      'luxury',
-      'dracula',
-      'cmyk',
-      'autumn',
-      'business',
-      'acid',
-      'lemonade',
       'night',
-      'coffee',
-      'winter',
-      'procyon',
+      // 'cupcake',
+      // 'bumblebee',
+      // 'emerald',
+      // 'corporate',
+      // 'synthwave',
+      // 'retro',
+      // 'cyberpunk',
+      // 'valentine',
+      // 'halloween',
+      // 'garden',
+      // 'forest',
+      // 'aqua',
+      // 'lofi',
+      // 'pastel',
+      // 'fantasy',
+      // 'wireframe',
+      // 'black',
+      // 'luxury',
+      // 'dracula',
+      // 'cmyk',
+      // 'autumn',
+      // 'business',
+      // 'acid',
+      // 'lemonade',
+      // 'night',
+      // 'coffee',
+      // 'winter',
+      // 'procyon',
     ],
 
     // Custom theme
@@ -178,11 +194,11 @@ const config = {
   },
 
   // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
-      target="_blank"
-      rel="noreferrer"
-    >GitProfile</a> and ❤️`,
+  // footer: `Made with <a 
+  //     class="text-primary" href="https://github.com/arifszn/gitprofile"
+  //     target="_blank"
+  //     rel="noreferrer"
+  //   >GitProfile</a> and ❤️`,
 };
 
 export default config;
